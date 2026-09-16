@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  padding: 14px 12px;
+  border-right: 1px solid #ececec;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  font-size: 14.5px;
+  color: #111;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #f5f5f5;
+}
+
+.sidebar {
+  display: flex; 
+  flex-direction: column;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-btn.small {
+  font-size: 13.5px;
+  color: #333;
+}
+
+.promo-card {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #ececec;
+}
+
+.promo-title {
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-bottom: 6px;
+}
+
+.promo-text {
+  font-size: 12.5px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 9px 0;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.app-title .chevron {
+  font-size: 12px;
+  color: #888;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-link {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #fff;
+  color: #111;
+  border: 1px solid #d8d8d8;
+  padding: 9px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 40px 20px;
+  min-height: 70vh;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #111;
+}
+
+.prompt-bar {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 28px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  font-size: 15px;
+  color: #333;
+}
+
+.plus-icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  color: #666;
+  font-size: 16px;
+}
+
+.prompt-placeholder {
+  flex: 1;
+  color: #9a9a9a;
+}
+
+.mic-icon {
+  color: #666;
+  font-size: 15px;
+}
+
+.send-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #b9b9b9;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.suggestion-pill {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* --- DEBUG: outline every div while building layout --- */
+div {
+  outline: 1px solid rgba(255, 0, 0, 0.15);
+}
